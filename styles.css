@@ -1,0 +1,227 @@
+/* Ferari Impianti — phone-first urgency landing */
+
+:root {
+  --brand-green: #0d9488;
+  --brand-green-dark: #0f766e;
+  --urgency-red: #b91c1c;
+  --urgency-amber: #f59e0b;
+  --hero-glow: rgba(13, 148, 136, 0.35);
+  --fab-size-mobile: 3.75rem;
+  --fab-size-desktop: 4.25rem;
+  --fab-gap: 0.75rem;
+  --fab-call-bottom-mobile: calc(6.25rem + env(safe-area-inset-bottom, 0px));
+  --fab-call-bottom-desktop: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.42);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.42);
+    opacity: 0;
+  }
+}
+
+.pulse-cta {
+  position: relative;
+}
+
+.pulse-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  pointer-events: none;
+}
+
+.pulse-cta--outline::before {
+  border-color: var(--brand-green);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-cta::before {
+    animation: none;
+  }
+  .banner-pulse .banner-dot {
+    animation: none !important;
+  }
+}
+
+/* Hero radial depth */
+.hero-shell {
+  background-color: #0f172a;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -30%, rgba(13, 148, 136, 0.45), transparent 55%),
+    radial-gradient(ellipse 80% 50% at 100% 50%, rgba(245, 158, 11, 0.12), transparent 45%),
+    linear-gradient(180deg, #0f172a 0%, #020617 100%);
+}
+
+/* Category cards: full-row tap */
+.cat-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.cat-card:active {
+  transform: scale(0.99);
+}
+
+@media (hover: hover) {
+  .cat-card:hover {
+    border-color: rgba(13, 148, 136, 0.45);
+    box-shadow: 0 12px 40px -12px var(--hero-glow);
+  }
+}
+
+.work-card {
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.work-card-visual img {
+  transition: transform 0.35s ease, filter 0.25s ease;
+}
+
+@media (hover: hover) {
+  .work-card:hover {
+    border-color: rgba(13, 148, 136, 0.35);
+    box-shadow: 0 16px 48px -14px var(--hero-glow);
+  }
+
+  .work-card:hover .work-card-visual img {
+    transform: scale(1.04);
+    filter: brightness(1.06);
+  }
+}
+
+/* Space: mobile bottom bar + floating button (desktop) */
+.safe-bottom-mobile {
+  padding-bottom: calc(5.75rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .safe-bottom-mobile {
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+body.has-fab-desktop {
+  padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  body.has-fab-desktop {
+    padding-bottom: calc(8.5rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+.header-scrolled {
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* FAB lateral: pulsante chiama vicino alla barra, WhatsApp subito sopra (fixed durante scroll) */
+.fab-call {
+  position: fixed;
+  z-index: 46;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: var(--fab-call-bottom-mobile);
+  width: var(--fab-size-mobile);
+  height: var(--fab-size-mobile);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #14b8a6, #0d9488);
+  color: #fff;
+  box-shadow:
+    0 4px 14px rgba(13, 148, 136, 0.55),
+    0 0 0 3px rgba(255, 255, 255, 0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fab-call:active {
+  transform: scale(0.96);
+}
+
+@media (min-width: 768px) {
+  .fab-call {
+    bottom: var(--fab-call-bottom-desktop);
+    width: var(--fab-size-desktop);
+    height: var(--fab-size-desktop);
+  }
+}
+
+.fab-call svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .fab-call svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.fab-whatsapp {
+  position: fixed;
+  z-index: 46;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: calc(
+    var(--fab-call-bottom-mobile) + var(--fab-size-mobile) + var(--fab-gap)
+  );
+  width: var(--fab-size-mobile);
+  height: var(--fab-size-mobile);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #2fe066, #25d366);
+  color: #fff;
+  box-shadow:
+    0 4px 16px rgba(37, 211, 102, 0.5),
+    0 0 0 3px rgba(255, 255, 255, 0.14);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fab-whatsapp:active {
+  transform: scale(0.96);
+}
+
+@media (min-width: 768px) {
+  .fab-whatsapp {
+    bottom: calc(
+      var(--fab-call-bottom-desktop) + var(--fab-size-desktop) + var(--fab-gap)
+    );
+    width: var(--fab-size-desktop);
+    height: var(--fab-size-desktop);
+  }
+}
+
+.fab-whatsapp svg {
+  width: 1.85rem;
+  height: 1.85rem;
+}
+
+@media (min-width: 768px) {
+  .fab-whatsapp svg {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+}

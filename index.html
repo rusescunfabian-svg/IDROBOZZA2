@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>
+      Emergenza Casa Bologna 24h — Idraulico &amp; Elettricista | Ferari Impianti ☎ 392 632 2720
+    </title>
+    <meta
+      name="description"
+      content="Pronto intervento casa Bologna: chiama 392 632 2720. Urgenze idrauliche ed elettriche h24 — allagamento, caldaia, scarichi, corto circuito, blackout. Ascolto immediato e uscita rapida."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <!-- Aggiorna con l'URL pubblico finale -->
+    <link rel="canonical" href="https://www.example.com/" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "Roboto",
+                "Ubuntu",
+                "Cantarell",
+                "Noto Sans",
+                "sans-serif",
+              ],
+            },
+            colors: {
+              brand: {
+                DEFAULT: "#0d9488",
+                dark: "#0f766e",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Ferari Impianti — Pronto Intervento 24h Idraulico ed Elettricista",
+        "alternateName": "Ferari Impianti",
+        "description": "Pronto intervento per emergenze domestiche a Bologna: idraulico ed elettricista h24. Allagamenti, caldaie, scarichi, corto circuito, blackout. Risposta immediata.",
+        "url": "https://www.example.com/",
+        "telephone": "+393926322720",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bologna",
+          "addressRegion": "BO",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.4949,
+          "longitude": 11.3426
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Bologna"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Pronto intervento casa",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Urgenze idrauliche — perdite e allagamenti" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Caldaie e scaldabagno" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Scarichi e disostruzione" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Blackout e quadro elettrico" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corto circuito e differenziali" } }
+          ]
+        },
+        "sameAs": []
+      }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased safe-bottom-mobile has-fab-desktop">
+    <div class="sticky top-0 z-[60]">
+    <!-- Strip urgenza: tap = chiamata -->
+    <div
+      class="banner-pulse flex items-center justify-center gap-2 border-b border-red-900/40 bg-gradient-to-r from-red-950 via-red-900 to-red-950 px-3 py-2.5 text-center shadow-lg shadow-black/40"
+      role="alert"
+    >
+      <span
+        class="banner-dot hidden h-2 w-2 shrink-0 rounded-full bg-amber-400 sm:inline sm:animate-pulse"
+        aria-hidden="true"
+      ></span>
+      <a
+        href="tel:+393926322720"
+        class="flex flex-wrap items-center justify-center gap-x-2 gap-y-0 text-xs font-black uppercase tracking-wide text-white sm:text-sm"
+      >
+        <span class="hidden sm:inline">Emergenza in casa?</span>
+        <span class="underline decoration-amber-400/90 decoration-2 underline-offset-2">Tocca qui — linea urgenza h24</span>
+        <span class="tabular-nums text-amber-200">392 632 2720</span>
+      </a>
+    </div>
+
+    <header
+      id="site-header"
+      class="border-b border-slate-800/90 bg-slate-950/90 backdrop-blur-md transition-shadow duration-200"
+    >
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-3 py-3 sm:px-4">
+        <a href="#top" class="flex min-w-0 items-center gap-2 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500 to-teal-700 text-sm font-black text-white shadow-lg shadow-teal-900/50" aria-hidden="true">FI</span>
+          <span class="min-w-0 leading-tight">
+            <span class="block text-sm font-bold text-white sm:text-base">Ferari Impianti</span>
+            <span class="block text-[11px] font-semibold uppercase tracking-wider text-teal-300/90 sm:text-xs">Idraulico · Elettricista · H24</span>
+          </span>
+        </a>
+        <div class="flex shrink-0 flex-col items-end gap-1 sm:flex-row sm:items-center sm:gap-3">
+          <a
+            href="tel:+393926322720"
+            class="hidden text-sm font-bold tabular-nums text-teal-200 hover:text-white sm:inline"
+            >392 632 2720</a
+          >
+          <a
+            href="tel:+393926322720"
+            class="pulse-cta inline-flex items-center justify-center rounded-full bg-gradient-to-br from-teal-500 to-teal-700 px-4 py-2.5 text-xs font-black uppercase tracking-wide text-white shadow-lg shadow-teal-900/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 active:scale-[0.97] sm:px-5 sm:text-sm"
+          >
+            <svg class="mr-2 h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"
+              />
+            </svg>
+            Chiama ora
+          </a>
+        </div>
+      </div>
+    </header>
+    </div>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero-shell relative overflow-hidden border-b border-slate-800" aria-labelledby="hero-heading">
+        <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,transparent,rgba(2,6,23,0.92))]" aria-hidden="true"></div>
+        <div class="relative mx-auto max-w-6xl px-3 pb-10 pt-8 sm:px-4 sm:pb-14 sm:pt-10 md:pb-16 md:pt-14">
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <span class="rounded-md bg-amber-500/20 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-amber-200 ring-1 ring-amber-500/40 sm:text-xs">
+              Linea attiva 24/7
+            </span>
+            <span class="rounded-md bg-white/5 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-300 ring-1 ring-white/10 sm:text-xs">
+              Bologna &amp; provincia
+            </span>
+          </div>
+          <h1 id="hero-heading" class="mt-4 max-w-2xl text-balance text-[1.2rem] font-extrabold leading-snug tracking-tight text-white sm:mt-5 sm:max-w-4xl sm:text-[2rem] sm:leading-tight sm:font-black md:text-[2.5rem] lg:text-[3rem] xl:text-[3.15rem]">
+            Pronto intervento <span class="text-teal-300">in casa</span> a Bologna
+            <br class="md:hidden" aria-hidden="true" />
+            <span class="block text-base font-bold text-slate-200 md:inline md:text-inherit lg:text-inherit"><span class="text-slate-500 md:text-slate-400"> · </span><span class="text-amber-300">≈30 min</span><span class="font-semibold text-slate-400"> in area urbana</span></span>
+          </h1>
+          <div class="mt-4 max-w-xl space-y-2.5 text-sm leading-snug text-slate-400 sm:mt-5 sm:max-w-2xl sm:space-y-0 sm:text-lg sm:leading-relaxed">
+            <p>
+              Ti guidiamo subito al telefono e, se serve, ti indichiamo i primi passi corretti <span class="hidden sm:inline">in attesa del tecnico</span>.
+            </p>
+            <p>
+              <strong class="font-semibold text-slate-200">Urgenze:</strong> allagamenti, caldaie, scarichi, corto circuito, blackout — poi inviamo il tecnico più vicino.
+            </p>
+          </div>
+
+          <!-- Chiama ORA + form contatto -->
+          <div class="mt-6 grid gap-5 lg:grid-cols-[minmax(0,22rem)_1fr] lg:items-stretch lg:gap-6 xl:gap-10 sm:mt-8">
+            <a
+              href="tel:+393926322720"
+              class="pulse-cta flex h-min flex-col items-center justify-center gap-0.5 self-start rounded-2xl bg-gradient-to-br from-teal-500 via-teal-600 to-teal-800 px-5 py-4 text-center shadow-2xl shadow-teal-900/50 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-400/80 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 sm:gap-1 sm:px-6 sm:py-5 lg:w-full lg:max-w-none"
+              aria-label="Chiama il pronto intervento al 392 632 2720"
+            >
+              <span class="text-[10px] font-black uppercase tracking-[0.18em] text-white/85 sm:text-xs sm:tracking-[0.2em]">Premi per chiamare</span>
+              <span class="font-mono text-2xl font-black tabular-nums tracking-tight text-white sm:text-4xl">392 632 2720</span>
+              <span class="max-w-[16rem] text-[11px] font-medium leading-tight text-teal-100 sm:max-w-none sm:text-xs sm:font-semibold">Idraulico &amp; Elettricista — risposta subito</span>
+            </a>
+
+            <div
+              id="contatti"
+              class="rounded-2xl border border-white/15 bg-white/[0.07] p-4 shadow-xl backdrop-blur-md sm:p-6"
+            >
+              <h2 class="text-base font-black text-white sm:text-xl">Modulo di contatto</h2>
+              <p class="mt-2 text-xs text-slate-400 sm:text-sm">
+                Compila i campi: all’invio si aprirà WhatsApp con il messaggio già compilato.<br />Per urgenze immediate chiama comunque direttamente.
+              </p>
+              <form id="contact-form" class="mt-5 space-y-4" action="#" method="post" novalidate>
+                <div>
+                  <label for="nome" class="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-400">Nome e cognome <span class="text-amber-400">*</span></label>
+                  <input
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    required
+                    maxlength="120"
+                    autocomplete="name"
+                    class="form-input block w-full rounded-xl border border-slate-600 bg-slate-950 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                    placeholder="Mario Rossi"
+                  />
+                </div>
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <label for="cell" class="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-400">Telefono <span class="text-amber-400">*</span></label>
+                    <input
+                      id="cell"
+                      name="cell"
+                      type="tel"
+                      required
+                      inputmode="tel"
+                      autocomplete="tel"
+                      maxlength="32"
+                      class="form-input block w-full rounded-xl border border-slate-600 bg-slate-950 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                      placeholder="+39 …"
+                    />
+                  </div>
+                  <div>
+                    <label for="email-opz" class="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-400">Email <span class="text-slate-500">(opz.)</span></label>
+                    <input
+                      id="email-opz"
+                      name="email"
+                      type="email"
+                      maxlength="160"
+                      autocomplete="email"
+                      class="form-input block w-full rounded-xl border border-slate-600 bg-slate-950 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                      placeholder="tu@email.it"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="tipo-problema" class="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-400">Tipo problema</label>
+                  <select
+                    id="tipo-problema"
+                    name="tipo"
+                    class="form-input block w-full rounded-xl border border-slate-600 bg-slate-950 px-4 py-3 text-sm text-white focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                  >
+                    <option value="Non specificato">Seleziona…</option>
+                    <option value="Idraulico">Idraulico</option>
+                    <option value="Elettricista">Elettricista</option>
+                    <option value="Entrambi / non so">Entrambi / non so</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="messaggio" class="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-400">Descrivi l’urgenza <span class="text-amber-400">*</span></label>
+                  <textarea
+                    id="messaggio"
+                    name="messaggio"
+                    required
+                    rows="4"
+                    maxlength="2000"
+                    class="form-input resize-y block w-full rounded-xl border border-slate-600 bg-slate-950 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                    placeholder="Zona Bologna, che cosa succede, da quanto tempo…"
+                  ></textarea>
+                </div>
+                <div class="flex flex-wrap items-start gap-3">
+                  <input type="checkbox" id="privacy" name="privacy" required class="mt-1 h-4 w-4 shrink-0 rounded border-slate-500 bg-slate-950 text-teal-600 focus:ring-teal-500" />
+                  <label for="privacy" class="text-xs leading-relaxed text-slate-400">
+                    Ho letto l’informativa e acconsento al trattamento dei dati per essere ricontattato/o in merito alla richiesta. <span class="text-amber-400">*</span>
+                  </label>
+                </div>
+                <!-- anti-bot leggero -->
+                <input type="text" name="website_field" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden" />
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <button
+                    type="submit"
+                    class="inline-flex items-center justify-center gap-2 rounded-xl bg-green-600 px-6 py-3.5 text-sm font-black uppercase tracking-wide text-white shadow-lg transition hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+                  >
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    Invia via WhatsApp
+                  </button>
+                  <a href="tel:+393926322720" class="text-center text-sm font-bold text-teal-300 underline decoration-teal-500/50 underline-offset-2 hover:text-white sm:text-left">Preferisci chiamare? 392 632 2720</a>
+                </div>
+                <p id="form-status" class="hidden text-sm font-semibold" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categorie emergenza — ogni card = link tel -->
+      <section id="categorie" class="border-b border-slate-800 bg-slate-900 py-12 sm:py-14" aria-labelledby="cat-heading">
+        <div class="mx-auto max-w-6xl px-4">
+          <h2 id="cat-heading" class="text-2xl font-black text-white sm:text-3xl">Di cosa hai bisogno adesso?</h2>
+          <p class="mt-3 max-w-3xl text-sm text-slate-400 sm:text-base">
+            Scegli la situazione più simile alla tua: <strong class="text-slate-200">ogni riquadro apre direttamente la chiamata</strong>. Spiegaci il problema in 10 secondi e partiamo.
+          </p>
+
+          <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <a
+              href="tel:+393926322720"
+              class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+            >
+              <span class="text-[10px] font-bold uppercase tracking-widest text-red-400">Urgenza acqua</span>
+              <span class="mt-1 text-lg font-bold text-white">Allagamento o perdita improvvisa</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Pavimenti bagnati, soffitti che gocciolano, tubo scoppiato: bloccate l’acqua e chiamate.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400 group-hover:text-teal-300">
+                Chiama per allagamento
+                <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </span>
+            </a>
+
+            <a href="tel:+393926322720" class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-amber-400">Caldaia / acqua calda</span>
+              <span class="mt-1 text-lg font-bold text-white">Riparazione caldaie e scaldabagno</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Errori sul display, mancata accensione, perdite dal generatore: intervento prioritaria.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400">Chiama per caldaia <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+            </a>
+
+            <a href="tel:+393926322720" class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Scarichi</span>
+              <span class="mt-1 text-lg font-bold text-white">WC otturato, lavandino, doccia, colonna</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Riflussi, cattivi odori, scarico lento: disostruzione e messa in sicurezza.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400">Chiama per scarichi <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+            </a>
+
+            <a href="tel:+393926322720" class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Tubi &amp; rubinetti</span>
+              <span class="mt-1 text-lg font-bold text-white">Tubature rotte e rubinetti che perdono</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Riparazioni provvisorie definitive, ricerca perdite, sostituzione accessori urgenti.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400">Chiama idraulico <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+            </a>
+
+            <a href="tel:+393926322720" class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-amber-300">Elettricità</span>
+              <span class="mt-1 text-lg font-bold text-white">Blackout o salvavita che scatta</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Casa al buio, ripetuti scatti del differenziale: diagnosi e ripristino sicuro.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400">Chiama per blackout <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+            </a>
+
+            <a href="tel:+393926322720" class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-red-300">Pericolo elettrico</span>
+              <span class="mt-1 text-lg font-bold text-white">Corto circuito, scintille, prese bruciate</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Evita il fai-da-te: mettiamo al sicuro l’impianto prima che peggiori.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400">Chiama per corto circuito <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+            </a>
+
+            <a href="tel:+393926322720" class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Punti luce</span>
+              <span class="mt-1 text-lg font-bold text-white">Interruttori, prese, lampade che non funzionano</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Circuiti dedicati, sovraccarichi, sostituzioni rapide dove serve.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400">Chiama elettricista <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+            </a>
+
+            <a href="tel:+393926322720" class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Bagno / cucina</span>
+              <span class="mt-1 text-lg font-bold text-white">Emergenza rubinetti, sanitari, collegamenti</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Perdite sotto il lavello, scarico bagno, attacchi lavastoviglie o lavatrice.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400">Chiama per bagno/cucina <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+            </a>
+
+            <a href="tel:+393926322720" class="cat-card group relative flex flex-col rounded-2xl border border-slate-700/80 bg-slate-950/60 p-4 ring-1 ring-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 sm:col-span-2 lg:col-span-1">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-teal-300">Non sei sicuro?</span>
+              <span class="mt-1 text-lg font-bold text-white">Altri guasti domestici urgenti</span>
+              <p class="mt-2 flex-1 text-sm text-slate-400">Combinazione idraulico + elettrico, odori anomali, situazioni confuse: descrivilo al telefono e ti aiutiamo noi.</p>
+              <span class="mt-4 inline-flex items-center text-sm font-black text-teal-400">Parla subito con l’operatore <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- I nostri lavori -->
+      <section id="lavori" class="border-b border-slate-800 bg-slate-950 py-12 sm:py-14" aria-labelledby="lavori-heading">
+        <div class="mx-auto max-w-6xl px-4">
+          <h2 id="lavori-heading" class="text-2xl font-black text-white sm:text-3xl">I nostri lavori</h2>
+          <p class="mt-3 max-w-3xl text-sm text-slate-400 sm:text-base">
+            Alcuni <strong class="text-slate-200">interventi tipici</strong> che svolgiamo su abitazioni e piccoli condomini a Bologna e dintorni: dalla messa in sicurezza alle riparazioni strutturate.
+          </p>
+
+          <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="work-card flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 ring-1 ring-white/5">
+              <div class="work-card-visual relative isolate aspect-[5/3] overflow-hidden bg-slate-900 sm:aspect-video">
+                <img
+                  src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                  alt="Attrezzi da idraulico e lavorazione su tubi domestici — esempio intervento"
+                  width="720"
+                  height="432"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="flex flex-1 flex-col p-4">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-teal-400">Idraulico</span>
+                <h3 class="mt-1 text-base font-bold text-white sm:text-lg">Ricerca perdita e ripristino tubazione</h3>
+                <p class="mt-2 flex-1 text-sm leading-snug text-slate-400">Individuazione perdita a muro, apertura mirata e sostituzione tratto danneggiato con collaudo finale.</p>
+                <span class="mt-3 text-xs text-slate-500">Zona residenziale — Bologna</span>
+              </div>
+            </article>
+
+            <article class="work-card flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 ring-1 ring-white/5">
+              <div class="work-card-visual relative isolate aspect-[5/3] overflow-hidden bg-slate-900 sm:aspect-video">
+                <img
+                  src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                  alt="Cavi e quadro elettrico — contesto tipico ripristino differenziali e circuiti"
+                  width="720"
+                  height="432"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="flex flex-1 flex-col p-4">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-amber-400/90">Elettricista</span>
+                <h3 class="mt-1 text-base font-bold text-white sm:text-lg">Quadro generale e differenziali</h3>
+                <p class="mt-2 flex-1 text-sm leading-snug text-slate-400">Messa in sicurezza del quadro e bilanciamento carichi dopo ripetuti scatti del salvavita.</p>
+                <span class="mt-3 text-xs text-slate-500">Condominio — periferia BO</span>
+              </div>
+            </article>
+
+            <article class="work-card flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 ring-1 ring-white/5">
+              <div class="work-card-visual relative isolate aspect-[5/3] overflow-hidden bg-slate-900 sm:aspect-video">
+                <img
+                  src="https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                  alt="Interno domestico con impianti — contesto montaggio caldaia murale"
+                  width="720"
+                  height="432"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="flex flex-1 flex-col p-4">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-teal-400">Idraulico</span>
+                <h3 class="mt-1 text-base font-bold text-white sm:text-lg">Caldaia murale — messa in servizio</h3>
+                <p class="mt-2 flex-1 text-sm leading-snug text-slate-400">Collegamenti idraulici e verifica tenuta dopo sostituzione o messa in servizio.</p>
+                <span class="mt-3 text-xs text-slate-500">Casa privata</span>
+              </div>
+            </article>
+
+            <article class="work-card flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 ring-1 ring-white/5">
+              <div class="work-card-visual relative isolate aspect-[5/3] overflow-hidden bg-slate-900 sm:aspect-video">
+                <img
+                  src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                  alt="Illuminazione a soffitto in ambiente giorno — esempio impianto LED"
+                  width="720"
+                  height="432"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="flex flex-1 flex-col p-4">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-amber-300/90">Elettricista</span>
+                <h3 class="mt-1 text-base font-bold text-white sm:text-lg">Impianto luci LED e prese dedicate</h3>
+                <p class="mt-2 flex-1 text-sm leading-snug text-slate-400">Nuovi punti luce e linee dedicate per elettrodomestici, con verifica di terra.</p>
+                <span class="mt-3 text-xs text-slate-500">Appartamento — centro</span>
+              </div>
+            </article>
+
+            <article class="work-card flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 ring-1 ring-white/5">
+              <div class="work-card-visual relative isolate aspect-[5/3] overflow-hidden bg-slate-900 sm:aspect-video">
+                <img
+                  src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                  alt="Bagno sanitari e rifiniture — contesto scarichi e colonne condominiali"
+                  width="720"
+                  height="432"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="flex flex-1 flex-col p-4">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-teal-400">Idraulico</span>
+                <h3 class="mt-1 text-base font-bold text-white sm:text-lg">Disostruzione rete scarichi</h3>
+                <p class="mt-2 flex-1 text-sm leading-snug text-slate-400">Colonne bagno e attacchi lavatrice: ripristino deflusso e collaudi rapidi.</p>
+                <span class="mt-3 text-xs text-slate-500">Stabile anni ’70</span>
+              </div>
+            </article>
+
+            <article class="work-card flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 ring-1 ring-white/5">
+              <div class="work-card-visual relative isolate aspect-[5/3] overflow-hidden bg-slate-900 sm:aspect-video">
+                <img
+                  src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                  alt="Superficie bagnata in cucina — esempio urgenza allagamento e messa in sicurezza"
+                  width="720"
+                  height="432"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="flex flex-1 flex-col p-4">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-teal-300">Idraulico + elettrico</span>
+                <h3 class="mt-1 text-base font-bold text-white sm:text-lg">Emergenza allagamento e messa in sicurezza</h3>
+                <p class="mt-2 flex-1 text-sm leading-snug text-slate-400">Chiusura acqua, drenaggio, verifica prese dopo infiltrazione — intervento h24 quando serve.</p>
+                <span class="mt-3 text-xs text-slate-500">Urgenza h24 — BO</span>
+              </div>
+            </article>
+          </div>
+
+          <p class="mt-8 text-center text-[11px] leading-relaxed text-slate-500 sm:text-xs">
+            Foto tramite Unsplash · <strong class="font-medium text-slate-400">non sono i cantieri Ferari Impianti</strong>: solo esempi visivi. Per un portfolio reale caricare le foto dei vostri interventi in <code class="rounded bg-slate-800 px-1 py-px text-[10px] text-slate-300">images/works/</code>.
+          </p>
+
+          <div class="mt-10 rounded-2xl border border-teal-500/20 bg-teal-950/20 px-4 py-4 text-center sm:px-6">
+            <p class="text-sm text-slate-300">
+              Vuoi raccontarci il <strong class="text-white">tuo</strong> intervento? Chiamaci o usa il <a href="#contatti" class="font-bold text-teal-400 underline underline-offset-2 hover:text-teal-300">modulo contatti</a>.
+            </p>
+            <a
+              href="tel:+393926322720"
+              class="mt-4 inline-flex items-center justify-center rounded-full bg-teal-600 px-6 py-2.5 text-sm font-black text-white shadow-lg transition hover:bg-teal-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+            >
+              Chiama 392 632 2720
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flusso dopo chiamata -->
+      <section class="border-b border-slate-800 bg-slate-950 py-12" aria-labelledby="flusso-heading">
+        <div class="mx-auto max-w-6xl px-4">
+          <h2 id="flusso-heading" class="text-center text-xl font-black text-white sm:text-2xl">Dopo la chiamata, cosa facciamo</h2>
+          <ol class="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-3 sm:mt-10">
+            <li class="relative rounded-2xl border border-slate-800 bg-slate-900/80 p-5 text-center ring-1 ring-white/5">
+              <span class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-teal-600 text-lg font-black text-white" aria-hidden="true">1</span>
+              <h3 class="mt-3 font-bold text-white">Ascolto immediato</h3>
+              <p class="mt-2 text-sm text-slate-400">Valutazione rapida sul telefono: così capiamo se serve idraulico, elettricista o entrambi.</p>
+            </li>
+            <li class="relative rounded-2xl border border-slate-800 bg-slate-900/80 p-5 text-center ring-1 ring-white/5">
+              <span class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-teal-600 text-lg font-black text-white" aria-hidden="true">2</span>
+              <h3 class="mt-3 font-bold text-white">Uscita in zona Bologna</h3>
+              <p class="mt-2 text-sm text-slate-400">Indirizzo e fascia oraria più vicina possibile, con obiettivo media di circa 30 minuti in area urbana.</p>
+            </li>
+            <li class="relative rounded-2xl border border-slate-800 bg-slate-900/80 p-5 text-center ring-1 ring-white/5">
+              <span class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-teal-600 text-lg font-black text-white" aria-hidden="true">3</span>
+              <h3 class="mt-3 font-bold text-white">Prezzi chiari prima</h3>
+              <p class="mt-2 text-sm text-slate-400">Stima sintetica e trasparenza — così parti tranquillo anche in piena urgenza.</p>
+            </li>
+          </ol>
+          <div class="mt-10 flex justify-center">
+            <a
+              href="tel:+393926322720"
+              class="pulse-cta pulse-cta--outline inline-flex items-center rounded-full bg-white px-8 py-4 text-lg font-black text-teal-800 shadow-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-teal-400"
+            >
+              <svg class="mr-3 h-6 w-6 text-teal-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
+              </svg>
+              392 632 2720
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sintesi servizi + trust -->
+      <section id="perche-noi" class="border-b border-slate-800 bg-slate-900 py-12" aria-labelledby="trust-heading">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 lg:grid-cols-2 lg:gap-12">
+            <div>
+              <h2 id="trust-heading" class="text-xl font-black text-white sm:text-2xl">Perché scegliere Ferari Impianti</h2>
+              <p class="mt-3 text-sm text-slate-400 sm:text-base">Quando la <strong class="text-slate-200">casa</strong> è in emergenza, contare su chi risponde subito fa la differenza: <strong class="text-slate-200">linea dedicata</strong> e squadre abituate agli interventi notturni.</p>
+              <ul class="mt-6 space-y-4">
+                <li class="flex gap-3 rounded-xl border border-slate-800 bg-slate-950/50 p-4">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-teal-500/20 text-teal-300" aria-hidden="true">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                  </span>
+                  <div>
+                    <span class="font-bold text-white">Tecnici certificati</span>
+                    <p class="mt-1 text-sm text-slate-400">Idraulica domestica ed elettricità nei limiti degli interventi d’emergenza e messa in sicurezza.</p>
+                  </div>
+                </li>
+                <li class="flex gap-3 rounded-xl border border-slate-800 bg-slate-950/50 p-4">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-teal-500/20 text-teal-300" aria-hidden="true">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </span>
+                  <div>
+                    <span class="font-bold text-white">Prezzi trasparenti</span>
+                    <p class="mt-1 text-sm text-slate-400">Trasparenza sul costo: concordiamo insieme prima di mettere mano all’impianto.</p>
+                  </div>
+                </li>
+                <li class="flex gap-3 rounded-xl border border-slate-800 bg-slate-950/50 p-4">
+                  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-teal-500/20 text-teal-300" aria-hidden="true">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </span>
+                  <div>
+                    <span class="font-bold text-white">Disponibili 24/7</span>
+                    <p class="mt-1 text-sm text-slate-400">Notte, domenica, festivi: la linea resta accesa per urgenze domestiche a Bologna.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-950 to-slate-900 p-6 ring-1 ring-teal-500/20 sm:p-8">
+              <h3 class="text-lg font-black text-white">Promemoria sicurezza</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                In caso di <strong class="text-amber-200">allagamento</strong> serio, chiudi la valvola generale dell’acqua se puoi farlo in sicurezza. Con
+                <strong class="text-amber-200">corto circuito</strong> o odore di bruciato, stacca i differenziali se istintivamente sicuro — altrimenti aspetta indicazioni telefoniche.
+              </p>
+              <p class="mt-4 text-xs text-slate-500">Il tempo di arrivo dipende da traffico, distanza e ordine degli interventi aperti.</p>
+              <a
+                href="tel:+393926322720"
+                class="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-teal-600 py-4 text-base font-black text-white shadow-lg transition hover:bg-teal-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+              >
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                Chiama ora — 392 632 2720
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="dicono-di-noi"
+        class="border-t border-slate-800 bg-slate-900 py-12"
+        aria-labelledby="rec-heading"
+      >
+        <div class="mx-auto max-w-6xl px-4">
+          <h2 id="rec-heading" class="text-xl font-black text-white sm:text-2xl">Dicono di noi</h2>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-3">
+            <article class="rounded-2xl border border-slate-700 bg-slate-950/70 p-5">
+              <p class="text-amber-400/90" aria-hidden="true">★★★★★</p>
+              <p class="mt-3 text-sm italic leading-relaxed text-slate-300">
+                «Intervento serale sulla perdita in bagno: risposta al telefono e arrivo nei tempi concordati.»
+              </p>
+              <p class="mt-4 text-xs font-semibold text-slate-500">Cliente · Bologna centro</p>
+            </article>
+            <article class="rounded-2xl border border-slate-700 bg-slate-950/70 p-5">
+              <p class="text-amber-400/90" aria-hidden="true">★★★★★</p>
+              <p class="mt-3 text-sm italic leading-relaxed text-slate-300">
+                «Quadro luci dopo differenziali che scattavano — spiegazioni chiare prima dei lavori.»
+              </p>
+              <p class="mt-4 text-xs font-semibold text-slate-500">Cliente · Zona ospedale</p>
+            </article>
+            <article class="rounded-2xl border border-slate-700 bg-slate-950/70 p-5">
+              <p class="text-amber-400/90" aria-hidden="true">★★★★★</p>
+              <p class="mt-3 text-sm italic leading-relaxed text-slate-300">
+                «Caldaia messa subito al sicuro, completamento dopo con calma. Professionalità h24.»
+              </p>
+              <p class="mt-4 text-xs font-semibold text-slate-500">Cliente · Prima periferia</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gradient-to-b from-red-950/40 to-slate-950 py-12" aria-labelledby="final-cta">
+        <div class="mx-auto max-w-6xl px-4 text-center">
+          <h2 id="final-cta" class="text-2xl font-black text-white sm:text-3xl">Non aspettare che peggiori.</h2>
+          <p class="mx-auto mt-3 max-w-xl text-slate-400">Un minuto in più al telefono può evitare danni maggiori in casa. <strong class="text-white">Rispondiamo subito</strong> e coordiniamo il tecnico.</p>
+          <a
+            href="tel:+393926322720"
+            class="pulse-cta mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-10 py-5 text-xl font-black tabular-nums text-slate-950 shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-300"
+            aria-label="Chiama subito 3926322720"
+          >
+            <svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+            392 632 2720
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950 py-10 text-center text-sm text-slate-500">
+      <div class="mx-auto max-w-6xl px-4">
+        <p class="font-bold text-white">Ferari Impianti — Pronto Intervento 24h Idraulico ed Elettricista</p>
+        <p class="mt-3 text-lg font-black tabular-nums text-teal-400">
+          <a href="tel:+393926322720" class="hover:text-teal-300 focus:outline-none focus-visible:underline">392 632 2720</a>
+        </p>
+        <p class="mt-2 text-slate-400">Bologna e provincia — pronto intervento h24.</p>
+        <nav class="mt-6 flex flex-wrap justify-center gap-4 text-xs font-semibold uppercase tracking-wide text-slate-500">
+          <a href="#categorie" class="hover:text-teal-400">Categorie emergenza</a>
+          <a href="#lavori" class="hover:text-teal-400">I nostri lavori</a>
+          <a href="#top" class="hover:text-teal-400">Torna su</a>
+          <a href="#contatti" class="hover:text-teal-400">Contatti</a>
+          <a href="#perche-noi" class="hover:text-teal-400">Perché noi</a>
+          <a href="#dicono-di-noi" class="hover:text-teal-400">Dicono di noi</a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Mobile: sticky bottom call bar -->
+    <div
+      class="fixed inset-x-0 bottom-0 z-50 flex border-t border-teal-400/25 bg-gradient-to-r from-teal-900 via-slate-950 to-teal-900 px-3 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:hidden"
+      role="region"
+      aria-label="Chiama da cellulare"
+    >
+      <a
+        href="tel:+393926322720"
+        class="flex w-full items-center justify-center gap-2 rounded-xl bg-white py-3.5 text-sm font-black text-teal-900 shadow-xl active:scale-[0.99] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+      >
+        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
+        </svg>
+        CHIAMA ORA · 392 632 2720
+      </a>
+    </div>
+
+    <!-- FAB WhatsApp (sopra) + telefono: fissi a destra mentre scrolli -->
+    <a
+      href="https://wa.me/393926322720?text=Ciao%20Ferari%20Impianti%2C%20ho%20bisogno%20di%20un%20pronto%20intervento%20a%20Bologna."
+      class="fab-whatsapp focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Scrivi su WhatsApp al 392 632 2720"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+    <a
+      href="tel:+393926322720"
+      class="fab-call focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+      aria-label="Chiama pronto intervento 392 632 2720"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
+      </svg>
+    </a>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
