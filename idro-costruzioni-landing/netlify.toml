@@ -1,9 +1,10 @@
-# Deploy Netlify: collega questo repo/cartella — non serve npm né build.
-# Comando vuoto OK nella dashboard; qui usiamo `true` per compatibilità CI.
+# Site static — fără npm / build.
+# Netlify citește automat acest fișier când leagă repo-ul de GitHub.
 
 [build]
-  command = "true"
   publish = "."
+
+# Lăsăm comanda de build goală implicit; Netlify folosește doar „publish”.
 
 [context.production.environment]
   NODE_VERSION = "20"
