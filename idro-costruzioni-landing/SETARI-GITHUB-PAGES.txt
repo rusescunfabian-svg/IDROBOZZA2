@@ -1,0 +1,34 @@
+================================================================================
+  GITHUB PAGES – pași care merg aproape mereu (folder „docs”)
+================================================================================
+
+1) Încarcă pe GitHub TOT proiectul, inclusiv folderul „docs” cu:
+   - docs/index.html
+   - docs/styles.css
+   - docs/main.js
+   - docs/images/impianti-caldo-freddo.png   (dacă lipsește, pune tu poza acolo)
+
+2) În repo: Settings → Pages (din meniul stânga al repo-ului).
+
+3) La „Build and deployment”:
+   ALEGEREA A (cea mai simplă, fără Actions):
+   - Source: „Deploy from a branch”
+   - Branch: main  (sau master – aceeași ramură unde ai făcut commit)
+   - Folder: /docs  ← IMPORTANT: nu „/ (root)”, ci exact „docs”
+   - Save
+
+   ALEGEREA B (GitHub Actions):
+   - Source: „GitHub Actions”
+   - Fă push la fișierul .github/workflows/pages.yml
+   - Tab „Actions”: așteaptă workflow verde
+   (Workflow-ul publică doar ce e în folderul „docs”.)
+
+4) URL-ul site-ului NU este github.com/... ci de forma:
+   https://USERNAME.github.io/NUME-REPO/
+   (cu NUME-REPO exact cum se numește repository-ul tău)
+
+5) Repo PRIVAT pe cont gratuit: GitHub Pages poate fi dezactivat. Încearcă repo PUBLIC.
+
+6) Așteaptă 1–3 minute după commit, apoi reîncarcă pagina (Ctrl+F5).
+
+================================================================================
